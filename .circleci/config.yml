@@ -1,0 +1,38 @@
+version: 2.1
+test_delete_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run: python test_delete_request.py
+
+test_get_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run: python test_get_request.py
+
+test_patch_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run: python test_patch_request.py
+
+test_post_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run: python test_post_request.py
+
+test_put_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run: python test_put_request.py
+
+
+
