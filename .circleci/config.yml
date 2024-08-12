@@ -6,42 +6,42 @@ jobs:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python test_get_request.py
+      - run: python API/test_get_request.py
 
   test_delete_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python test_delete_request.py
+      - run: python API/test_delete_request.py
 
   test_patch_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python test_patch_request.py
+      - run: python API/test_patch_request.py
 
   test_post_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python test_post_request.py
+      - run: python API/test_post_request.py
 
   test_put_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python test_put_request.py
+      - run: python API/test_put_request.py
 
 workflows:
   version: 2
   sequence_of_execution:
     jobs:
-      - test_get_request
-      - test_delete_request
+      - API/test_get_request
+      - API/test_delete_request
       - test_patch_request
       - test_post_request
       - test_put_request
