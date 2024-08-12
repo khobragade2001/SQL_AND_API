@@ -42,6 +42,6 @@ workflows:
     jobs:
       - API/test_get_request
       - API/test_delete_request
-      - test_patch_request
-      - test_post_request
-      - test_put_request
+      - API/test_patch_request
+      - API/test_post_request
+      - API/test_put_request
