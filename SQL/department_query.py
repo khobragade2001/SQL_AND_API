@@ -6,4 +6,7 @@ connection = mysql.connector.connect(
     passwd="654321")
 
 cursor = connection.cursor()
-
+query = "select * from khobragade.emp where salary= (select max(salary) from khobragade.emp)"
+cursor.execute(query)
+var = cursor.fetchall()
+print(var)

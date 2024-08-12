@@ -1,22 +1,32 @@
 import requests
 
 def post_request():
-    url = "https://api.freeapi.app/api/v1/users/register"
+    url = "https://reqres.in/api/users/2"
     data = {
-           "email" : "vijay.setupati@outlook.com",
-           "username" : "vijaysetupati",
-           "password" : "Vijay@003"
-    }
+            "id":"01",
+            "email":"khobragade2001@gmail.com",
+           "first_name" : "Ashish",
+           "last_name" : "khobragade",
+           "password" : "Ashish@003"
+                }
     responce = requests.post(url, json=data)
+    status_code = responce.status_code
 
-    if (responce.status_code == 201):
-       assert True
+    if (status_code == 201):
+       print("status code :", status_code)
+       print("Indicates that the POST request was successful, and a new resource was created as a result. ")
+
     elif (responce.status_code == 409):
-        print("data already present in server........")
+        print("status code :", status_code)
+        print(" Above status code indicate data already present in server........")
+
+    elif(status_code == 400):
+        print("status code :", status_code)
+        print("Indicates that the server could not understand the request due to invalid syntax,")
     else:
         assert False
 
-    print("status code :",responce.status_code)
+
     print("responce body :",responce.json())
 
 ## callling of functions
