@@ -6,35 +6,60 @@ jobs:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python API/test_get_request.py
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python tests/test_get_request.py
 
   test_delete_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python API/test_delete_request.py
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python tests/test_delete_request.py
 
   test_patch_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python API/test_patch_request.py
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python tests/test_patch_request.py
 
   test_post_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python API/test_post_request.py
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python tests/test_post_request.py
 
   test_put_request:
     docker:
       - image: cimg/python:3.11
     steps:
       - checkout
-      - run: python API/test_put_request.py
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python tests/test_put_request.py
 
 workflows:
   version: 2
