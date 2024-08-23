@@ -11,7 +11,7 @@ def Weather_info():
 
     # to get pritty data
     pritty_data = json.dumps(responce, indent=4)
-    # print(pritty_data)
+    print(pritty_data)
 
     # we want specific information like temp, speed, humidity, status code
     if "name" in responce:
@@ -36,5 +36,5 @@ def Weather_info():
         print("You are Entered Wrong City .............")
 
 
-## calling function
+## calling of function
 Weather_info()

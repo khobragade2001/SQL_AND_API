@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 def Put_request():
@@ -37,12 +39,14 @@ def Put_request():
         print("status code :", status_code)
         print("Request failed.")
 
-    print(response.json())  # Print the JSON response to understand the result
-    print(response.headers)
-    print(response.url)
+    # print(response.json())  # Print the JSON response to understand the result
+    # print(response.headers)
+    # print(response.url)
+    return response
 
 
 # Calling the method
-Put_request()
-
+responce = Put_request()
+pritty = json.dumps(responce.json(), indent=5)
+print(pritty)
 

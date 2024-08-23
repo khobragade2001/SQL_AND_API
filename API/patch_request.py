@@ -1,3 +1,4 @@
+import json
 import requests
 
 def Patch_request():
@@ -22,6 +23,7 @@ def Patch_request():
     else:
         assert False
 
-    print(responce.json())
+    pritty = json.dumps(responce.json(), indent=5)
+    print(pritty)
 ## calling
 Patch_request()

@@ -1,0 +1,12 @@
+status code : 201
+Indicates that the POST request was successful, and a new resource was created as a result.
+{
+     "id": "01",
+     "email": "khobragade2001@gmail.com",
+     "first_name": "Ashish",
+     "last_name": "khobragade",
+     "password": "Ashish@003",
+     "createdAt": "2024-08-23T10:00:12.131Z"
+}
+
+

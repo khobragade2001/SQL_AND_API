@@ -1,0 +1,10 @@
+status code : 200
+This status code means the PUT request was successful, and the server is returning the updated resource in the response body..
+{
+     "id": "01",
+     "first_name": "Ashish Khobragade",
+     "last_name": "khobragade",
+     "updatedAt": "2024-08-23T10:17:06.216Z"
+}
+
+

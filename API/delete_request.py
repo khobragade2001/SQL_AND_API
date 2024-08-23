@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 def delete_request():
@@ -30,9 +32,12 @@ def delete_request():
 
     else:
         assert False
+    return responce
 
-## add some comments
+## callling of functions
+# responce = delete_request()
+# pritty = json.dumps(responce.json(), indent=5)
+# print(pritty)
 
 
-    ## callling of functions
-delete_request()
+

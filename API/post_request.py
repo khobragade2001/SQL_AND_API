@@ -1,4 +1,5 @@
 import requests
+import json
 
 def post_request():
     url = "https://reqres.in/api/users/2"
@@ -27,7 +28,8 @@ def post_request():
         assert False
 
 
-    print("responce body :",responce.json())
+    pritty = json.dumps(responce.json(), indent=5)
+    print(pritty)
 
 ## callling of functions
 post_request()

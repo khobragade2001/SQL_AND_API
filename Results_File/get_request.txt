@@ -1,0 +1,64 @@
+user name :  lazyfrog123
+country name :  Iran
+password :  ddddd
+status code :
+{
+     "statusCode": 200,
+     "data": {
+          "gender": "female",
+          "name": {
+               "title": "Ms",
+               "first": "\u0645\u0647\u062f\u06cc\u0633",
+               "last": "\u062c\u0639\u0641\u0631\u06cc"
+          },
+          "location": {
+               "street": {
+                    "number": 6567,
+                    "name": "\u0645\u06cc\u062f\u0627\u0646 \u0642\u06cc\u0627\u0645"
+               },
+               "city": "\u06af\u0644\u0633\u062a\u0627\u0646",
+               "state": "\u06a9\u0631\u062f\u0633\u062a\u0627\u0646",
+               "country": "Iran",
+               "postcode": 82914,
+               "coordinates": {
+                    "latitude": "-37.4621",
+                    "longitude": "59.4311"
+               },
+               "timezone": {
+                    "offset": "+6:00",
+                    "description": "Almaty, Dhaka, Colombo"
+               }
+          },
+          "email": "mhdys.jaafry@example.com",
+          "login": {
+               "uuid": "904176b7-67bc-4d91-83f0-9a1ad400e269",
+               "username": "lazyfrog123",
+               "password": "ddddd",
+               "salt": "oUlRtkDK",
+               "md5": "59debe72faa14ac52c617eb953ab4a4d",
+               "sha1": "7e0ea96df4d9c75719a66b71d5ac5b824c7d1c73",
+               "sha256": "714ad35ee1bb4b78b2ed9468afdfa8e533861a03d0c3a13e3aa80675b69976b3"
+          },
+          "dob": {
+               "date": "1975-04-30T05:11:19.057Z",
+               "age": 48
+          },
+          "registered": {
+               "date": "2013-10-24T17:50:40.697Z",
+               "age": 9
+          },
+          "phone": "037-82467124",
+          "cell": "0999-982-4964",
+          "id": 190,
+          "picture": {
+               "large": "https://randomuser.me/api/portraits/women/9.jpg",
+               "medium": "https://randomuser.me/api/portraits/med/women/9.jpg",
+               "thumbnail": "https://randomuser.me/api/portraits/thumb/women/9.jpg"
+          },
+          "nat": "IR"
+     },
+     "message": "Random user fetched successfully",
+     "success": true
+}
+
+
