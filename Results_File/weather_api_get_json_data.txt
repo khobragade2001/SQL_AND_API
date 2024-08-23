@@ -1,0 +1,56 @@
+"D:\CREDENCE CLASS\AUTOMATION\API_AUTOMATION\venv\Scripts\python.exe" "D:\CREDENCE CLASS\AUTOMATION\API_AUTOMATION\API\weather_api.py"
+Enter City :yavatmal
+{
+    "coord": {
+        "lon": 78.1333,
+        "lat": 20.4
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 25.47,
+        "feels_like": 26.4,
+        "temp_min": 25.47,
+        "temp_max": 25.47,
+        "pressure": 1004,
+        "humidity": 89,
+        "sea_level": 1004,
+        "grnd_level": 955
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 2.37,
+        "deg": 247,
+        "gust": 4.99
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1724406453,
+    "sys": {
+        "country": "IN",
+        "sunrise": 1724372970,
+        "sunset": 1724418664
+    },
+    "timezone": 19800,
+    "id": 1252770,
+    "name": "Yavatmal",
+    "cod": 200
+}
+City name is : Yavatmal
+Status Code : 200
+Avg Temp is : 25.47
+Weather Conditions : overcast clouds
+Maximum Temp : 25.47
+Minimum Temp : 25.47
+Speed of Wind : 2.37
+Humidity : 89
+
+Process finished with exit code 0

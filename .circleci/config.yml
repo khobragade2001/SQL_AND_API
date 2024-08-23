@@ -61,6 +61,18 @@ jobs:
             pip install -r requirements.txt
       - run: python API/put_request.py
 
+  test_weather_request:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+      - run: python API/weather_api.py
+
 workflows:
   version: 2
   sequence_of_execution:
@@ -70,3 +82,4 @@ workflows:
       - test_patch_request
       - test_post_request
       - test_put_request
+      - test_weather_request
