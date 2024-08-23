@@ -2,7 +2,7 @@ import json
 import requests
 
 def Weather_info():
-    city_name = input("Enter City :")
+    city_name = "yavatmal"
     api_key = 'f33b1b3b2e4417261d161b347f6b294a'
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&lang=en&appid={api_key}&units=metric'
 
